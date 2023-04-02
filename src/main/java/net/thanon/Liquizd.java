@@ -9,10 +9,6 @@ public class Liquizd {
     public static void main(String args[]) {
         config = Dotenv.configure().load();
         System.out.println("Liquizd version: " + config.get("VERSION"));
-        try {
             new BotMain();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
     }
 }
