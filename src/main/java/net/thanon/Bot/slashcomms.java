@@ -38,6 +38,8 @@ public class slashcomms extends ListenerAdapter {
             e.deferReply().queue();
             e.getHook().sendMessage(rf[(int) (Math.random() * 5)]).queue();
         }
+if(e.getName().equals("shutdown")) {
+e.getGuild().
         /*if(e.getName().equals("ticket")) {
             e.getGuild().createTextChannel("Ticket" + Math.random() * 2958).deadline(5).queue();
         }*/
