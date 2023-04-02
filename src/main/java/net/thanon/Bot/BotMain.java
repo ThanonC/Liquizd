@@ -14,7 +14,7 @@ public class BotMain {
     public static JDA bot;
     public static String prefix = Liquizd.config.get("PREFIX");
     public static String[] act = {"Liquizd!", prefix};
-    public BotMain() throws InterruptedException {
+    public BotMain() {
         bot = JDABuilder.createDefault(Liquizd.config.get("TOKEN"))
                 .enableIntents(GatewayIntent.GUILD_MEMBERS, GatewayIntent.MESSAGE_CONTENT, GatewayIntent.GUILD_MODERATION)
                 .enableCache(CacheFlag.VOICE_STATE, CacheFlag.MEMBER_OVERRIDES)
